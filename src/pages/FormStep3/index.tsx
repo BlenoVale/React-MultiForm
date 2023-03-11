@@ -22,6 +22,7 @@ export const FormStep3 = () => {
 
     const handleNextStep = () => {
             if (state.email !== '' && state.github !== '') {
+                navigate('/resume');
                 console.log(state);
             } else {
                 alert('Preencha os dados');
