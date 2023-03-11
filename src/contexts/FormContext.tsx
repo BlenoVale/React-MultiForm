@@ -50,6 +50,8 @@ const formReducer = (state: State, action: Action) => {
         case FormActions.setName:
             return { ...state, name: action.payload };
         case FormActions.setLevel:
+            return { ...state, level: action.payload };
+        case FormActions.setEmail:
             return { ...state, email: action.payload };
         case FormActions.setGithub:
             return { ...state, github: action.payload };
